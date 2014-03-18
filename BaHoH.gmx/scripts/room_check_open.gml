@@ -1,0 +1,16 @@
+if(!space_has_room(tx+1,ty)&&door[DOOR_RIGHT])
+{
+    show_message("right");
+}
+if(global.rest[tx,ty+-1]=-1&&door[DOOR_TOP])
+{
+    show_message("top");
+}
+if(global.rest[tx-1,ty]=-1&&door[DOOR_LEFT])
+{
+    show_message("left");
+}
+if(global.rest[tx,ty+1]=-1&&door[DOOR_BOTTOM])
+{
+    show_message("bottom");
+}
