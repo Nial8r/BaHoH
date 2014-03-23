@@ -67,10 +67,7 @@
     <script>scripts\player_turn_end.gml</script>
     <script>scripts\player_turn_start.gml</script>
     <script>scripts\Mellon.gml</script>
-<<<<<<< HEAD
-=======
     <script>scripts\pick_player.gml</script>
->>>>>>> origin/Nial8r
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
