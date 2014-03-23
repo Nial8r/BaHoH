@@ -33,6 +33,11 @@
     </scripts>
     <scripts name="players">
       <script>scripts\player_doctor.gml</script>
+      <script>scripts\player_bigman.gml</script>
+      <script>scripts\player_whore.gml</script>
+      <script>scripts\player_demongirl.gml</script>
+      <script>scripts\player_faggotkid.gml</script>
+      <script>scripts\player_voodoowoman.gml</script>
     </scripts>
     <scripts name="dun">
       <script>scripts\draw_die.gml</script>
