@@ -83,7 +83,10 @@ if(mouse_check_button_pressed(mb_left))
 
 if(mouse_inbounds2(1050*(1+(.0525*((view_wview-1280)/68))),600*(1+(.055*((view_hview-720)/40))),1200*(1+(.0525*((view_wview-1280)/68))),650*(1+(.055*((view_hview-720)/40))))&amp;&amp;mouse_check_button_pressed(mb_left))
 {
-    player_turn_end();
+    if(player.turn)
+        player_turn_end();
+    else
+        player_turn_start();
 }
 
 move_screen();
@@ -145,12 +148,22 @@ if(instance_exists(player))
     stat_check(998,150,1068,168,player.att_sanity);
     stat_check(1098,150,1207,168,player.att_knowledge);
     
-    draw_set_color(c_red);
-    draw_rectangle(1050,600,1200,650,0);
-    draw_set_font(fnt_bold);
-    draw_set_color(c_black);
-    draw_text(1090,618,"End Turn");
-
+    if(player.turn)
+    {
+        draw_set_color(c_red);
+        draw_rectangle(1050,600,1200,650,0);
+        draw_set_font(fnt_bold);
+        draw_set_color(c_black);
+        draw_text(1090,618,"End Turn");
+    }
+    else
+    {
+        draw_set_color(c_green);
+        draw_rectangle(1050,600,1200,650,0);
+        draw_set_font(fnt_bold);
+        draw_set_color(c_black);
+        draw_text(1090,618,"Start Turn");
+    }
 }
 
 //draw debug
