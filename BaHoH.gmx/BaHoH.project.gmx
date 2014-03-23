@@ -61,6 +61,7 @@
     <script>scripts\dice_reset.gml</script>
     <script>scripts\player_turn_end.gml</script>
     <script>scripts\player_turn_start.gml</script>
+    <script>scripts\Hello_Faggot.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
