@@ -1,5 +1,6 @@
 //Arguments:
 //arg0: tile
+/*
 if(argument0!=-1)
 {
 
@@ -9,5 +10,5 @@ if(argument0!=-1)
         return true;
     }
 
-}
+}*/
 return false;
