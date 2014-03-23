@@ -42,7 +42,7 @@ place_room(room_enterance,17,17);
 place_room(room_foyer,16,17);
 place_room(room_gstairs,15,17);
 
-place_player(player_doctor,17,17);
+place_player(pick_player(),17,17);
 global.att_selected = player.att_might;
 </string>
           </argument>
