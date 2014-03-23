@@ -9,17 +9,17 @@ if(script_execute(get_room(tp.tx,tp.ty).event_leave))
 {                                                       //show_message("1");
     if(get_room(argument0,argument1)!=-1)
     {                                                   //show_message("2");
-        if(!lastmoved_check(get_room(argument0,argument1)))
+        //if(!lastmoved_check(get_room(argument0,argument1)))
         {                                               //show_message("3");
             global.movedsquare[player.att_speed-player.moves_left]=get_room(tp.tx,tp.ty);
             global.lastmoved = get_room(tp.tx,tp.ty);
             tp.moves_left -=1;
         }
-        else
+        //else
         {                                               //show_message("4");
-            tp.moves_left +=1;
-            global.movedsquare[player.att_speed-player.moves_left] = -1;
-            global.lastmoved = global.movedsquare[player.att_speed-player.moves_left-1];
+            //tp.moves_left +=1;
+            //global.movedsquare[player.att_speed-player.moves_left] = -1;
+            //global.lastmoved = global.movedsquare[player.att_speed-player.moves_left-1];
         }
     }                                                   //show_message("5");
     else
